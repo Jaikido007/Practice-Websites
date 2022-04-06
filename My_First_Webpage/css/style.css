@@ -2,6 +2,18 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif sans-serif Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
 }
 
+img {
+  height: 480px;
+  width: 420px;
+  border: solid 5px green;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
 
+p {
+  margin-left: 320px;
+}
