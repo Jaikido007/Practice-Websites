@@ -210,7 +210,7 @@ button:hover {
   opacity: 0.75;
 }
 .button-primary {
-  background-color: #0d1c32;
+  background-color: #db9a11;
   color: #ffffff;
 }
 .button-secondary {
@@ -253,7 +253,7 @@ input {
   background-color: #f5f9ff;
 }
 .main-content-benefits h2 {
-  color: #0d1c32;
+  color: #db9a11;
 }
 
 .main-content-info {
