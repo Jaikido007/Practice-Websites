@@ -210,11 +210,11 @@ button:hover {
   opacity: 0.75;
 }
 .button-primary {
-  background-color: #60b3bd;
+  background-color: #92ae4a;
   color: #ffffff;
 }
 .button-secondary {
-  background-color: #627fb0;
+  background-color: #92ae4a;
   color: #ffffff;
 }
 input {
@@ -253,9 +253,8 @@ input {
   background-color: #f5f9ff;
 }
 .main-content-benefits h2 {
-  color: #65a3c7;
+  color: #bd6152;
 }
-
 .main-content-info {
   background-color: #627fb0;
   text-align: center;
@@ -277,7 +276,7 @@ input {
   text-align: center;
 }
 .main-content-cta {
-  background-color: #65a3c7;
+  background-color: #bd6152;
   color: #ffffff;
   padding: 80px 0;
 }
