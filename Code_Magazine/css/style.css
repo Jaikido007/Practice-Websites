@@ -1,0 +1,326 @@
+* {
+    font-family: sans-serif;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+/* PAGE SECTIONS */
+
+
+body {
+    position: relative;
+    border-top: .5rem solid #1098ad;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    /* Padding: Top, Right, Bottom, Left ( or just use top, bottom, and left, right ie: 20px 40px*/
+    padding: 1rem 2rem 1.5rem 2rem;
+    margin-bottom: 2.8rem;
+}
+
+nav {
+    font-size: 1rem;
+}
+
+article header{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+aside {
+    background-color: #f7f7f7;
+    border-top: .25rem solid #1098ad;
+    border-bottom: .25rem solid #1098ad;
+    padding: 1rem .5rem;
+    width: 80%;
+}
+
+.author-img {
+    margin-top: .5rem;
+    margin-left: .5rem;
+    border-radius: 10%;
+    border-radius: .5rem;
+    border-radius: .5rem;
+    border: solid 3px #1098ad
+
+}
+
+.post-image{
+    width: 100%;
+    height: auto;
+    border: solid 3px #1098ad
+}
+
+.content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Smaller elements */
+
+h1, h2, h3 {
+    color: #1098ad;
+}
+
+ul, ol li {
+    margin-left: 3rem;
+    /* list-style: none; */
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+li {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+li:last-child{
+    margin-bottom: 1rem;
+}
+
+aside h4{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+h3 + p::first-line {
+    /* color: red; */
+}
+
+h2{
+    position: relative;
+}
+
+h2::after {
+    background-color: #ffe70e;
+    content: "TOP";
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    color: #444;
+    top: -10px;
+    right: -25px;
+}
+
+.last-line {
+    margin-bottom: 1.35rem;
+}
+
+
+/* RELATED POSTS SECTION  */
+
+.related {
+    list-style: none;
+}
+
+.related a{
+    /* padding-left: .5rem; */
+}
+
+.related img{
+    padding: 3px 3px;
+    border-radius: 10px;
+    border: solid 3px #1098ad
+}
+
+ .related-author {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.author {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Styling links */
+/* --LVHA order-- */
+
+a:link { 
+    color:#1098ad; 
+    text-decoration: none;
+
+    margin-right: 2rem;
+    margin-top: .5rem;
+    display: inline-block;
+
+}
+
+nav a:link:last-child{
+    margin-right: 0;
+}
+
+a:visited {
+    color:#1098ad; 
+}
+a:hover {
+    color:#1098ad8a; 
+    text-decoration: underline;
+}
+a:active {
+    color:orange; 
+    font-style: italic;
+}
+
+/* LIKE BUTTON  */
+
+.like{
+    position: absolute;
+    /* top: 50px;
+    left: 50px; */
+    bottom: 50px;
+    right: 50px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 1.2rem;
+    border-radius: 5%;
+    box-shadow: 3px 3px rgba(32, 32, 32, 0.2);
+    border: solid 1px #e0dede;
+
+}
+
+.like:active {
+    box-shadow: 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.like:hover {
+    background-color: rgba(205, 92, 92, 0.19);
+}
+
+/* FOOTER SECTION */
+
+#copyright {
+    color: whitesmoke;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+
+/* FLOATS */
+
+.author-img {
+    float: left;
+    margin-bottom: 1rem;
+}
+
+.author {
+    float: left;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+}
+
+h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+/* ! clear fixes */
+
+/* .clear-floats{
+    clear: both;
+} */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ! clear fixes end */
+
+article {
+    width: 68%;
+    float: left;
+}
+
+aside {
+    background-color: #f7f7f7;;
+    width: 25%;
+    float: right;
+
+}
+
+footer {
+    background-color: #1098ad;
+    clear: both;
+}
+
+
+
+
+/* ! NOT IN USE - JUST FOR LEARNING PURPOSES */
+
+/* ? misconeption: this won't work */
+
+article p:first-child {
+    /* color: gold; */
+}
+
+li:first-child {
+    /* font-weight: bold; */
+}
+
+li:nth-child(even){
+    /* color: red; */
+}
+
+li:last-child {
+    /* font-style: italic; */
+}
+
+/* SELECTOR PRIORITY: ID#1, CLASS/PSUDO#2, ELEMENT#3, UNIVERSAL(*)#4 */
+
+/* ? If multiple, last applied */
+/* ? INLINE styles have highest priority */
+/*  ! IMPORTANT keyword is a hack for a last resort */
+
+/* Resolving Conflicts */
+
+#copyright {    /* color: red; */ }
+.copyright {    /* color: blue; */ }
+.text {    /* color: yellow; */ }
+footer p {    /* color: green; */ }
