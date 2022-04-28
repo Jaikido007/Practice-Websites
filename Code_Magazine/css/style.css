@@ -3,6 +3,7 @@
     color: #444;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -38,8 +39,8 @@ aside {
     background-color: #f7f7f7;
     border-top: .25rem solid #1098ad;
     border-bottom: .25rem solid #1098ad;
-    padding: 1rem .5rem;
-    width: 80%;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
 }
 
 .author-img {
@@ -48,14 +49,14 @@ aside {
     border-radius: 10%;
     border-radius: .5rem;
     border-radius: .5rem;
-    border: solid 3px #1098ad
+    border: solid .25rem #1098ad
 
 }
 
 .post-image{
     width: 100%;
     height: auto;
-    border: solid 3px #1098ad
+    border: solid .25rem #1098ad
 }
 
 .content{
@@ -110,7 +111,7 @@ li {
 }
 
 li:last-child{
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 aside h4{
@@ -120,7 +121,7 @@ aside h4{
 
 h1::first-letter {
     font-style: normal;
-    margin-right: 5px;
+    margin-right: .25rem;
 }
 
 h3 + p::first-line {
@@ -137,11 +138,11 @@ h2::after {
     font-size: 1rem;
     font-weight: bold;
     display: inline-block;
-    padding: 5px 10px;
+    padding: .25rem .5rem;
     position: absolute;
     color: #444;
-    top: -10px;
-    right: -25px;
+    top: -.5rem;
+    right: -1.5rem;
 }
 
 .last-line {
@@ -153,16 +154,13 @@ h2::after {
 
 .related {
     list-style: none;
-}
-
-.related a{
-    /* padding-left: .5rem; */
+    margin-left: 0;
 }
 
 .related img{
-    padding: 3px 3px;
-    border-radius: 10px;
-    border: solid 3px #1098ad
+    padding: .2rem .2rem;
+    border-radius: .5rem;
+    border: solid .2rem #1098ad
 }
 
  .related-author {
@@ -178,12 +176,11 @@ h2::after {
 /* Styling links */
 /* --LVHA order-- */
 
-a:link { 
+nav a:link { 
     color:#1098ad; 
     text-decoration: none;
 
     margin-right: 2rem;
-    margin-top: .5rem;
     display: inline-block;
 
 }
@@ -231,96 +228,89 @@ a:active {
 
 /* FOOTER SECTION */
 
+footer {
+    background-color: #1098ad;
+}
+
 #copyright {
     color: whitesmoke;
     margin-left: 1rem;
     font-size: 0.8rem;
 }
 
-/* FLOATS */
+/* FLEXBOX */
 
-.author-img {
-    float: left;
+.main-header {
+    display: flex;
+    align-items: center;
+}
+
+.author-box {
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
 .author {
-    float: left;
-    margin-top: 2.5rem;
+    margin-bottom: 0;
     margin-left: 1rem;
 }
 
-h1 {
-    float: left;
+.related-link {
+
 }
 
-nav {
-    float: right;
+.related-post {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.4rem;
 }
 
-/* ! clear fixes */
-
-/* .clear-floats{
-    clear: both;
-} */
-
-.clearfix::after {
-    content: "";
-    clear: both;
+.related-link:link {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: .25rem;
     display: block;
 }
 
-/* ! clear fixes end */
+.related-link:link:hover {
+    color:#1098ad8a; 
+    text-decoration: underline;
+}
+.related-link:link:active {
+    color:orange; 
+    font-style: italic;
+}
+
+.related-author {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+
+}
+
+.row {
+    display: flex;
+    gap: 6.25%;
+    align-items: flex-start;
+}
+
+aside{
+    flex: 0 0 25%;
+    margin-bottom: 3rem;
+}
 
 article {
-    width: 68%;
-    float: left;
-}
-
-aside {
-    background-color: #f7f7f7;;
-    width: 25%;
-    float: right;
+    flex: 1;
 
 }
 
-footer {
-    background-color: #1098ad;
-    clear: both;
+.related-post-title{
+    margin: 3rem 0 3rem 0;
 }
 
-
-
-
-/* ! NOT IN USE - JUST FOR LEARNING PURPOSES */
-
-/* ? misconeption: this won't work */
-
-article p:first-child {
-    /* color: gold; */
+.javascript {
+    margin-bottom: 3rem;
 }
-
-li:first-child {
-    /* font-weight: bold; */
-}
-
-li:nth-child(even){
-    /* color: red; */
-}
-
-li:last-child {
-    /* font-style: italic; */
-}
-
-/* SELECTOR PRIORITY: ID#1, CLASS/PSUDO#2, ELEMENT#3, UNIVERSAL(*)#4 */
-
-/* ? If multiple, last applied */
-/* ? INLINE styles have highest priority */
-/*  ! IMPORTANT keyword is a hack for a last resort */
-
-/* Resolving Conflicts */
-
-#copyright {    /* color: red; */ }
-.copyright {    /* color: blue; */ }
-.text {    /* color: yellow; */ }
-footer p {    /* color: green; */ }

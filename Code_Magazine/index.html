@@ -10,149 +10,166 @@
   <body>
     <!-- parent level - HEADER -->
     <div class="container">
-      <header class="main-header clearfix">
+      <header class="main-header">
         <h1>📘 The Code Magazine</h1>
 
         <nav>
           <a href="blog.html">Blog</a>
           <a href="#">Challenges</a>
-          <a href="#">Flexbox</a>
+          <a href="flexbox.html">Flexbox</a>
           <a href="#">CSS Grid</a>
         </nav>
-
-        <!-- <div class="clear-floats"></div> -->
       </header>
 
       <!-- Parent level - ARTICLE -->
+      <div class="row">
+        <article>
+          <header class="post-header">
+            <h2>The Basic Language of the Web: HTML</h2>
 
-      <article>
-        <header>
-          <h2>The Basic Language of the Web: HTML</h2>
-          <img
-            class="author-img"
-            src="./imgs/laura-jones.jpg"
-            alt="A picture of the journalist Laura Jones"
-            height="50px"
-            width="50px"
-          />
+            <div class="author-box">
+              <img
+                class="author-img"
+                src="./imgs/laura-jones.jpg"
+                alt="A picture of the journalist Laura Jones"
+                height="50px"
+                width="50px"
+              />
 
-          <p class="author" id="author">
-            Posted by <strong>Laura Jones</strong> on Monday, February 14th 2022
-          </p>
+              <p class="author">
+                Posted by <strong>Laura Jones</strong> on Monday, February 14th
+              </p>
+            </div>
 
-          <img
-            class="post-image"
-            src="./imgs/post-img.jpg"
-            alt="HTML code on a screen"
-          />
-          <br /><br />
-        </header>
-        <div class="content">
-          <p>
-            All modern websites and web applications are built using three
-            <em>fundamental</em>
-            technologies: HTML, CSS and JavaScript. These are the languages of
-            the web.
-          </p>
+            <img
+              class="post-image"
+              src="./imgs/post-img.jpg"
+              alt="HTML code on a screen"
+            />
+            <br /><br />
+          </header>
+          <div class="content">
+            <p>
+              All modern websites and web applications are built using three
+              <em>fundamental</em>
+              technologies: HTML, CSS and JavaScript. These are the languages of
+              the web.
+            </p>
 
-          <p>
-            In this post, let's focus on HTML. We will learn what HTML is all
-            about, and why you too should learn it.
-          </p>
+            <p>
+              In this post, let's focus on HTML. We will learn what HTML is all
+              about, and why you too should learn it.
+            </p>
 
-          <h3>What is HTML?</h3>
+            <h3>What is HTML?</h3>
 
-          <p>
-            HTML stands for <strong>H</strong>yper<strong>T</strong>ext
-            <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
-            language that web developers use to structure and describe the
-            content of a webpage (not a programming language).
-          </p>
-          <p>
-            HTML consists of elements that describe different types of content:
-            paragraphs, links, headings, images, video, etc. Web browsers
-            understand HTML and render HTML code as websites.
-          </p>
+            <p>
+              HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+              <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+              language that web developers use to structure and describe the
+              content of a webpage (not a programming language).
+            </p>
+            <p>
+              HTML consists of elements that describe different types of
+              content: paragraphs, links, headings, images, video, etc. Web
+              browsers understand HTML and render HTML code as websites.
+            </p>
 
-          <p>In HTML, each element is made up of 3 parts:</p>
+            <p>In HTML, each element is made up of 3 parts:</p>
 
-          <ol>
-            <li>The opening tag</li>
-            <li>The closing tag</li>
-            <li>The actual element</li>
-          </ol>
+            <ol>
+              <li>The opening tag</li>
+              <li>The closing tag</li>
+              <li>The actual element</li>
+            </ol>
 
-          <p>
-            You can learn more at the
-            <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
-          </p>
+            <p>
+              You can learn more at the
+              <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+            </p>
 
-          <h3>Why should you learn HTML?</h3>
+            <h3>Why should you learn HTML?</h3>
 
-          <p>
-            There are countless reasons for learning the fundamental language of
-            the web. Here are 5 of them:
-          </p>
+            <p>
+              There are countless reasons for learning the fundamental language
+              of the web. Here are 5 of them:
+            </p>
 
-          <ul>
-            <li>To be able to use the fundamental web dev language</li>
-            <li>
-              To hand-craft beautiful websites instead of relying on tools like
-              Worpress or Wix
+            <ul>
+              <li>To be able to use the fundamental web dev language</li>
+              <li>
+                To hand-craft beautiful websites instead of relying on tools
+                like Worpress or Wix
+              </li>
+              <li>To build web applications</li>
+              <li>To impress friends</li>
+              <li>To have fun 😃</li>
+            </ul>
+
+            <p class="last-line">
+              Hopefully you learned something new here. See you next time!
+            </p>
+          </div>
+        </article>
+
+        <aside>
+          <h4 class="related-post-title">Related Posts</h4>
+          <ul class="related">
+            <li class="related-post">
+              <img
+                class="man-coding"
+                src="./imgs/related-1.jpg"
+                alt="Person programming"
+                height="75px"
+                width="75px"
+              />
+
+              <div>
+                <a href="#" class="related-link"
+                  >How to Learn Web Development</a
+                >
+                <p class="related-author">By Jonas Schmedtmann</p>
+              </div>
             </li>
-            <li>To build web applications</li>
-            <li>To impress friends</li>
-            <li>To have fun 😃</li>
+            <li class="related-post">
+              <img
+                class="lightning"
+                src="./imgs/related-2.jpg"
+                alt="Lightning"
+                height="75px"
+                width="75px"
+              />
+
+              <div>
+                <a
+                  href="https://webflow.com/blog/how-to-learn-web-design"
+                  class="related-link"
+                  >The Unknown Power of CSS</a
+                >
+                <p class="related-author">By Jim Dillon</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img
+                class="javascript"
+                src="./imgs/related-3.jpg"
+                alt="JavaScript code on screen"
+                height="75px"
+                width="75px"
+              />
+
+              <div>
+                <a
+                  href="https://webflow.com/blog/how-to-learn-web-design"
+                  class="related-link"
+                  >Why JavaScript is Awesome</a
+                >
+                <p class="related-author">By Matilda</p>
+              </div>
+            </li>
           </ul>
-
-          <p class="last-line">
-            Hopefully you learned something new here. See you next time!
-          </p>
-        </div>
-      </article>
-
-      <aside>
-        <h4>Related Posts</h4>
-        <ul class="related">
-          <li class="coding">
-            <img
-              class="man-coding"
-              src="./imgs/related-1.jpg"
-              alt="Person programming"
-              height="75px"
-              width="75px"
-            />
-            <a href="#">How to Learn Web Development</a>
-            <p class="related-author">By Jonas Schmedtmann</p>
-          </li>
-          <li class="light-strike">
-            <img
-              class="lightning"
-              src="./imgs/related-2.jpg"
-              alt="Lightning"
-              height="75px"
-              width="75px"
-            />
-            <a href="https://webflow.com/blog/how-to-learn-web-design"
-              >The Unknown Power of CSS</a
-            >
-            <p class="related-author">By Jim Dillon</p>
-          </li>
-          <li class="js-awesome">
-            <img
-              class="javascript"
-              src="./imgs/related-3.jpg"
-              alt="JavaScript code on screen"
-              height="75px"
-              width="75px"
-            />
-            <a href="https://webflow.com/blog/how-to-learn-web-design"
-              >Why JavaScript is Awesome</a
-            >
-            <p class="related-author">By Matilda</p>
-          </li>
-        </ul>
-      </aside>
+        </aside>
+      </div>
 
       <footer>
         <p id="copyright" class="copyright text">
