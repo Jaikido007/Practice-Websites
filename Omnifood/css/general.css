@@ -16,6 +16,7 @@
         Small: 1.05
         Medium: 1.2
         Paragraph: 1.6
+        Large 1.8
 
     - Letter spacing
 
@@ -71,6 +72,7 @@
         /* 10px / 16px = 0.625 = 62.5% */
         /* Percentage of users browser font--size setting */
         font-size: 62.5%;
+        overflow-x: hidden;
     }
 
     body {
@@ -78,6 +80,7 @@
         color: #555;
         line-height: 1;
         font-weight: 400;
+        overflow-x: hidden;
     }
 
     /* --------------------------------- */
@@ -246,6 +249,7 @@
         align-items: center;
         gap: 6rem;
         font-size: 1.6rem;
+        line-height: 1.2;
     }
 
     .list-icon {
@@ -277,3 +281,4 @@
     strong {
         font-weight: 500;
     }
+
