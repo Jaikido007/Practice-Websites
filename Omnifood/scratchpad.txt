@@ -1,0 +1,39 @@
+    /* ------------------------- */
+    /*      REUSABLE GRID        */
+    /* ------------------------- */
+
+    .grid {
+        display: grid;
+        gap: 9.6rem;
+    }
+
+    .grid--2-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid--3-cols{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* --------------------------- */
+    /*        REUSABLE CENTER      */
+    /* --------------------------- */
+
+    .container {
+        /* 1140px */
+        max-width: 1200px;
+        /* 120rem if using rem trick */
+        margin: 0 auto;
+        padding: 0 3.2rem;
+    }
+
+    EXAMPLE CODE
+
+        <section class="section-how">
+        <div class="container grid grid--2-cols">
+          <div>Test 1</div>
+          <div>Test 2</div>
+          <div>Test 3</div>
+          <div>Test 4</div>
+      </div>
+      </section>
