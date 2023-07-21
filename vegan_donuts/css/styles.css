@@ -1,0 +1,266 @@
+/* ===============================
+ 
+   Colour Palette:
+   ---------------
+   Light Cream:	#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+
+   @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+   :root {
+      --light-cream: #f2f3ee;
+      --orange: #d17f38;
+      --yellow: #e8c04f;
+      --brown: #4b2707;
+   }
+
+   html {
+      font-size: 10px;
+   }
+
+
+/* General */
+
+body {
+   background: var(--light-cream) url(../images/bg-tile.gif) top left repeat;
+   color: var(--brown);
+   /* font-family: 'Love Ya Like A Sister', cursive; */
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.4rem;
+}
+
+.container {
+   width: 924px;
+   margin: 0 auto;
+   padding: 3rem 2.4rem;
+}
+
+/* Typography */
+
+h1, h2 {
+   color: var(--orange);
+   font-size: 4rem;
+   font-weight: 400;
+   font-family: 'Love Ya Like A Sister', cursive;
+   line-height: 4.4rem;
+   margin: 0;
+}
+
+h1 {
+   text-align: center;
+   padding: 0 0 2rem;
+   background: url(../images/header-divider.png) bottom center no-repeat;
+}
+
+h1 em {
+   font-style: normal;
+   color: var(--brown);
+}
+
+h2 {
+   font-size: 3.4rem;
+}
+
+h3 {
+   margin: 0;
+}
+
+p.lead {
+   font-size: 3rem;
+   font-weight: 300;
+   text-align: center;
+   margin: 1rem 0;
+}
+
+p {
+   margin: 0;
+}
+
+a:link, a:visited {
+   color: var(--orange);
+}
+
+a:hover, a:active {
+   transition: all 0.3s;
+   color: var(--brown);
+}
+
+hr {
+   border: none;
+   height: 3.3rem;
+   width: 33.3rem;
+   margin: 3rem auto;
+   background: url(../images/divider.png) center center no-repeat;
+}
+
+/* Header */
+
+header nav {
+   text-align: center;
+
+}
+
+header nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: block;
+   line-height: 14.1rem;
+}
+
+header nav ul li {
+   display: inline-block;
+   padding: 0 2rem;
+}
+
+header nav ul li a {
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: 700;
+}
+
+header nav ul li a:hover{
+   transition: all 0.3s;
+   color: var(--brown);
+   padding-top: 2rem;
+   background: url(../images/tiny-donut.png) top center no-repeat;
+}
+
+header nav ul li#logo a {
+   display: block;
+   width: 29.2rem;
+   height: 14.1rem;
+   background: url(../images/logo.png) center center no-repeat;
+   text-indent: -9999px;
+}
+
+header nav ul li#logo a:hover {
+   padding: 0;
+   background: url(../images/logo-hover.png) center center no-repeat;
+}
+
+/* Hero */
+
+.hero {
+   background: var(--yellow) url(../images/bg-tile-yellow.gif) top left repeat;
+}
+
+.hero .container {
+   position: relative;
+}
+
+.hero .large-ribbon {
+   height: 19rem;
+   width: 15rem;
+   background: url(../images/fresh-whole-ingredients.png) top left no-repeat;
+   text-indent: -9999px;
+   position: absolute;
+   top: -2.3rem;
+   right: -3rem;
+}
+
+/* The Whole Story */
+
+.story-excerpt {
+   width: 53rem;
+   margin-right: 2.4rem;
+   float: left;
+   font-size: 2.4rem;
+}
+
+.best-donut {
+   background: url(../images/award.png) left center no-repeat;
+   padding: 3rem 0 3rem 13rem;
+   float: left;
+   width: 24rem;
+}
+
+/* News & Events */
+
+#articles {
+   width: 37rem;
+   float: left;
+   margin-right: 2.4rem;
+}
+
+#feature-image {
+   width: 53rem;
+   float: left;
+}
+
+#news-events article {
+   margin: 2rem 0;
+   padding-left: 5.5rem;
+}
+
+#news-events article.news {
+   background: url(../images/icon-news.png) top left no-repeat;
+}
+
+#news-events article.event {
+   background: url(../images/icon-calendar.png) top left no-repeat;
+}
+
+#news-events header time {
+   color: var(--orange);
+   font-size: 1.2rem;
+}
+
+#news-events section.excerpt {
+   margin: 1rem 0;
+}
+
+#news-events footer {
+   font-size: 1.2rem;
+}
+
+/* Footer */
+
+footer.main {
+   display: flex;
+   background: var(--brown) url(../images/bg-tile-brown.gif) top left repeat;
+   color: var(--light-cream);
+   padding: 3rem 0;
+}
+
+footer .container {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   align-content: center;
+}
+
+footer.main a:hover {
+   color: var(--light-cream);
+}
+
+#uncopyright, #credits {
+   width: 40rem;
+   padding: 1rem 0 1rem 5rem;
+}
+
+#uncopyright {
+   background: url(../images/icon-recycle.png) center left no-repeat;
+}
+
+#credits {
+   background: url(../images/icon-apple.png) center left no-repeat;
+}
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+
+
+
+
+
