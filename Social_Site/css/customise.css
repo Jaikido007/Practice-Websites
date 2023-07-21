@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* ?COLORS */
+    --primary-color-hue: 252;
+    --light-color-lightness: 95%;
+    --dark-color-lightness: 17%;
+    --white-color-lightness: 100%;
+
+
+    --color-white: hsl(252, 30%, var(--white-color-lightness));
+    --color-light: hsl(255, 31%, var(--light-color-lightness));
+    --color-gray: hsl(253, 15%, 65%);
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 96%, 65%);
+    --color-danger: hsl(0, 85%, 65%);
+    --color-dark: hsl(254, 30%, var(--dark-color-lightness));
+    --color-black: hsl(252, 29%, 10%);
+    /* ? STYLING */
+    --border-radius: 3.2rem;
+    --card-border-radius: 1.6rem;
+    --btn-padding: 1rem 3.2rem;
+    --search-padding: 1rem 1.6rem;
+    --card-padding: 1.6rem;
+    /* ? STICKY */
+    --sticky-top-left: 8.6rem;
+    --sticky-top-right: -28.8rem    
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
+
+/* ----------CUSTOMISATION THEME---------- */
+
+.customise-theme {
+    background: rgba(255, 255, 255, 0.5);
+    width: 85vw;
+    height: 10vh;
+    position: fixed;
+    top: 22%;
+    left: 10%;
+    z-index: 100;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+
+    display: none;
+}
+
+.customise-theme .card {
+    background-color: var(--color-white);
+    padding: 4.8rem;
+    border-radius: var(--card-border-radius);
+    width: 50%;   
+    /* border: 5px solid var(--color-primary); */
+    box-shadow: 0 0 2.4rem var(--color-primary);
+}
+
+/* ----------FONT SIZE---------- */
+
+.customise-theme .font-size {
+    margin-top: 8rem;
+}
+
+.customise-theme .font-size > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+}
+
+.customise-theme .choose-size {
+    background: var(--color-secondary);
+    height: .5rem;
+    width: 100%;
+    margin: 0 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customise-theme .choose-size span { 
+    width: 1.6rem;
+    height: 1.6rem;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customise-theme .choose-size span.active { 
+    background: var(--color-primary);
+}
+
+/* ----------COLOUR PALETTE---------- */
+
+.customise-theme .colour {
+    margin-top: 3.2rem;
+}
+
+.customise-theme .choose-colour {
+    background: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customise-theme .choose-colour span { 
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.customise-theme .choose-colour span:nth-child(1) { 
+    background: hsl(252, 75%, 60%);
+}
+.customise-theme .choose-colour span:nth-child(2) { 
+    background: hsl(52, 75%, 60%);
+}
+.customise-theme .choose-colour span:nth-child(3) { 
+    background: hsl(352, 75%, 60%);
+}
+.customise-theme .choose-colour span:nth-child(4) { 
+    background: hsl(152, 75%, 60%);
+}
+.customise-theme .choose-colour span:nth-child(5) { 
+    background: hsl(202, 75%, 60%);
+}
+
+.customise-theme .choose-colour span.active {
+    border: 5px solid #fff;
+}
+
+/* ----------BACKGROUND---------- */
+
+.customise-theme .background {
+    margin-top: 3.2rem;
+
+}
+
+.customise-theme .choose-bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.customise-theme .choose-bg > div {
+    padding: var(--card-padding);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.customise-theme .choose-bg > div.active {
+    border: 2px solid var(--color-primary);
+}
+
+.customise-theme .choose-bg h5 {
+    font-size: 1.4rem;
+}
+
+.customise-theme .choose-bg .bg-1 {
+    background: #fff;
+    color: #555;
+}
+.customise-theme .choose-bg .bg-2 {
+    background: hsl(252, 30%, 25%);
+    color: #fff;
+}
+.customise-theme .choose-bg .bg-3 {
+    background: hsl(252, 30%, 10%);
+    color: #fff;
+}
+
+.customise-theme .choose-bg > div span { 
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 50%;
+    margin-right: 1.6rem;
+}
+
